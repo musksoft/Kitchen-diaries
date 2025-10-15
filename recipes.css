@@ -1,0 +1,338 @@
+body {
+    background: #faf8f6;
+    overflow-x: hidden;
+}
+
+.print-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;   /* Horizontal centering */
+    align-items: center;       /* Vertical centering */
+    background-color: white;
+    margin-top: -10rem;
+    text-align: center;
+    padding: 0.6em;
+    border: 0.2rem solid teal;
+    font-family: "Work Sans", serif;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    width: 300px;
+}
+
+  
+ .print-btn i{
+    margin-left: 5px;
+  }
+
+  
+  .print-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(222, 132, 102);
+    transition: 0.3s linear;
+    z-index: -1;
+  }
+  
+  .print-btn:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  .print-btn:hover {
+    color: #fff;
+  }
+
+
+.recipes-card {
+    height: 255vh;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.recipes-card li{
+    list-style-type: circle !important;
+}
+
+.recipes-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: -3rem;
+}
+.recipes-box{
+    height: 100rem;
+}
+
+.recipes-box hr {
+    width: 70%; /* Width of the <hr> */
+    margin-left: auto; /* Centers horizontally */
+    margin-right: auto; /* Centers horizontally */
+    margin-top: 1rem;
+    border: none; /* Optional: remove border style if you want a clean line */
+    height: 1px; /* Optional: define height if you want a thin line */
+    background-color: #000; /* Optional: define color for the line */
+}
+
+.mini-description {
+    display: block;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.recipes-description {
+    font-size: 2rem;
+    margin-top: -32rem;
+    text-align: center;
+    background-color: rgb(253, 240, 220);
+    height: 40rem;
+    padding: 2rem;
+    width: 100%;
+    /* margin-left: 6rem; */
+    border-radius: 2rem;
+}
+
+.prep-time, .total-time, .calories {
+    display: block;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 187px;
+    height: 20px;
+}
+
+.recipes-description .ingredients {
+    margin-right: 35rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recipes-description .description {
+    margin-left: 40rem;
+    margin-top: 1rem;
+    text-align: left !important;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.recipes-card span {
+    font-weight: bold;
+}
+
+/* New wrapper styles */
+.recipes-image, .recipes-title {
+    display: flex;
+}
+
+.wrapper {
+    height: 380px;
+    width: 250px;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    position: relative;
+    border: 4px solid #c6b0a1;
+    perspective: 1000px;
+    border-radius: 10em 10em 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s;
+    transform-origin: left;
+    border-radius: 10em 10em 0 0;
+}
+
+.wrapper .description {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1894e;
+    visibility: hidden; /* Hide the video initially */
+    z-index: 1; /* Ensure the video appears above the image */
+}
+
+.wrapper:hover img {
+    transform: rotateY(-90deg); /* Rotate the image when hovered */
+}
+
+.wrapper .description {
+    visibility: hidden;   /* Initially hidden */
+    opacity: 0;           /* Initially fully transparent */
+    transition: opacity 0.5s ease, visibility 0s 0.5s; /* Fade in with a delay */
+}
+
+.wrapper:hover .description {
+    visibility: visible;  /* Make the video visible */
+    opacity: 1;           /* Make the description fully visible */
+    transition: opacity 0.5s ease, visibility 0s 0s; /* Immediate visibility and fade-in effect */
+    border-radius: 10em 10em 0 0; /* Keeps the same border radius as the image */
+}
+
+.recipes-method .heading{
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;    
+    text-align: center;
+    padding-top: 1.8rem;
+}
+
+
+
+.recipes-detail {
+    font-size: 1.4rem;
+    margin: 6rem;  /* adjusted margin for top space */
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    width: 50%; /* Adjust width as needed */
+}
+
+#steps-image1 {
+    height: 30%;
+    width: 36%;
+    border-radius: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: 7rem;
+    z-index: -1;
+    margin-top: -70rem;
+
+}
+
+#steps-image2 {
+    height: 30%;
+    width: 36%;
+    border-radius: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: 7rem;
+    z-index: -1;
+    margin-top: -50rem;
+
+}
+
+#falafel-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem; /* Adjust this for spacing between images */
+    margin-top: 2rem;
+    width: 100%; /* Make sure container is wide enough */
+}
+
+.steps-image {
+    width: 40%;   /* Or use % if you prefer responsiveness */
+    height: auto;
+    border-radius: 1.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .recipes-card {
+        margin: 1rem; /* Reduce margin on smaller screens */
+    }
+
+    .recipes-image {
+        height: 300px; /* Adjust the image height for smaller screens */
+        width: 200px; /* Adjust the image width for smaller screens */
+    }
+
+    .recipes-title {
+        position: absolute;
+        bottom: 950px; /* Adjust this value as needed */
+        left: 50%;
+        transform: translateX(-50%); /* Centers the title horizontally */
+        width: 100%;
+        font-size: 3.2rem; /* Adjust font size for readability */
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .recipes-card {
+        display: block;
+        margin: 1rem; /* Reduce margin on smaller screens */
+        text-align: center; /* Center text within the card */
+    }
+    
+    .recipes-image {
+        height: 300px; /* Adjust the image height for smaller screens */
+        width: 200px; /* Adjust the image width for smaller screens */
+        display: block;
+        margin: 0 auto; /* Center image horizontally */
+        padding: 2rem;
+    }
+    
+    .recipes-title {
+        margin: 1rem;
+        font-size: 3.2rem; /* Adjust font size for readability */
+        display: block; /* Ensures title is block-level */
+        text-align: center; /* Ensure title is centered */
+    }
+
+    .recipes-title{
+        margin-bottom: 7rem;
+    }
+    
+    
+}
+@media print {
+    .body-nav, .footer, .print-btn {
+        display: none; /* Hide navigation, footer, and print button */
+    }
+
+    .recipes-method, .recipes-detail {
+        display: block; /* Ensure method and details are visible */
+        font-size: 1.4rem; /* Adjust font size for print if needed */
+    }
+
+    /* Optional: Adjust the layout for print */
+    .recipes-card {
+        margin: 0; /* Remove margins for better print layout */
+        height: auto; /* Allow card to expand based on content */
+    }
+
+    /* Optional: Adjust page margins */
+    @page {
+        margin: 20mm;
+    }
+
+    /* Optional: Adjust image scaling for print */
+    .recipes-image img {
+        max-width: 100%; /* Ensure the image fits within the page */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Optional: Adjust the recipe title for print */
+    .recipes-title {
+        font-size: 2.5rem; /* Adjust font size for readability */
+        margin-top: 1rem; /* Adjust margins */
+    }
+}

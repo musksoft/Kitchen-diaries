@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rough website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="body-nav">
+    <div class="navbar-new">
+      <div class="logo"><a href="#"><img src="foodpic/logo.png" alt=""></a></div>
+      <ul class="links-new">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="category.html">Recipes</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+<div class="right-section">              <li><a href="#" class="action-btn-new">Get started</a></li>
+</div>
+     
+
+      <div class="toggle-btn-new">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown-menu-new">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="action-btn-new">Get started</a></li>
+    </div>
+  </div>
+
+<section class="hero">
+    <video id="myVideo" src="foodpic/Screen Recording 2025-02-08 200543.mp4" width="100%" height="10%" loop muted>
+      Your browser does not support the video tag.
+    </video>
+    <button class="mutebtn"
+      onclick="document.getElementById('myVideo').muted = false; document.getElementById('myVideo').play()"><i
+        class="fa-solid fa-music" style="color: #a30569;"></i></button>
+    <button onclick="document.getElementById('myVideo').muted = true; document.getElementById('myVideo').play()"
+      id="soundbtn"><i class="fa-solid fa-volume-xmark" style="color: #e8893b;"></i></button>
+    <button onclick="document.getElementById('myVideo').play()" id="playbtn"><i class="fa-solid fa-play"
+        style="color: #3f78d9;"></i></button>
+    <button onclick="document.getElementById('myVideo').pause()" id="pausebtn"><i class="fa-solid fa-pause"
+        style="color: #9b3bce;"></i></button>
+
+  </section>
+
+
+  <div class="card">
+    <div class="card-title">
+      <h2> Open the doors to your cooking kitchen...</h5>
+        <p class="card-content">Welcome to the Food Fusion recipes.<br>
+          Where you can cook and learn in your style
+          and find your own comfort within your meals!
+          <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptate explicabo soluta in! Animi modi,
+          enim laborum quos harum voluptatem?
+
+        </p>
+        <a href="#" class="btn">Cook more</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="foodpic/hero.png" alt="">
+    </div>
+  </div>
+
+
+
+
+  <section class="about">
+    <div class="about-title">
+      About us
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maxime eveniet quia magni quae eius esse
+        deleniti dolorum suscipit sint blanditiis quo repellendus ad
+        eligendi reiciendis magnam, laborum dolor repudiandae.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis nobis velit sequi voluptas
+        cupiditate dolor
+        es asperiores dolorem eius numquam.</p>
+    </div>
+    <div class="body-wrapper">
+      <img src="foodpic/about.png" alt="" class="about-image">
+
+    </div>
+
+  </section>
+
+  <section class="body-slide">
+
+    <div class="slide-container">
+
+      <div class="slides">
+        <img src="foodpic/tiramisu.png" alt="" class="active">
+        <p>Our mission is to bring forward the cooks at home
+          <br>Who are not just concerned about their cooking skills but also
+          <br> hosting the hospitality for their loved ones...
+        </p>
+        <img src="foodpic/milkshake.png" alt="">
+        <img src="foodpic/bundt.png" alt="">
+        <img src="foodpic/pancakes.png" alt="">
+        <img src="foodpic/dubai-choco.png" alt="">
+      </div>
+
+      <div class="buttons">
+        <span class="next">&#10095;</span>
+        <span class="prev">&#10094;</span>
+      </div>
+      <hr>
+      <div class="dotsContainer">
+        <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+        <div class="dot" attr='1' onclick="switchImage(this)"></div>
+        <div class="dot" attr='2' onclick="switchImage(this)"></div>
+        <div class="dot" attr='3' onclick="switchImage(this)"></div>
+        <div class="dot" attr='4' onclick="switchImage(this)"></div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+  <section class="category">
+    <div class="category-title">CUISINES
+      <hr>
+    </div>
+    <div class="items">
+      <div class="body-wrapper">
+        <div class="wrapper">
+          <img src="foodpic/croissant.png" alt="">
+          <div class="description">
+            <a href="/card.html">Trends</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-wrapper">
+        <div class="wrapper">
+          <img src="foodpic/blue-mojito.jpg" alt="">
+          <div class="description">
+            <a href="#">Drinks</a>
+            <!-- <p>Ingredients:<br>
+                  1.Milk(3/4 cup)<br>
+                  2.Chocolate bars(as per preference)<br>
+                  3.Toppings(optional)
+                </p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="body-wrapper">
+        <div class="wrapper">
+
+          <img src="foodpic/breakfast.png" alt="">
+          <div class="description">
+            <a href="#">Breakfast</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-wrapper">
+        <div class="wrapper">
+          <img src="foodpic/falafelwrap.png" alt="">
+          <div class="description">
+            <a href="#">Lunch</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-wrapper">
+        <div class="wrapper">
+          <img src="foodpic/bundt.png" alt="">
+          <div class="description">
+            <a href="#">Desserts</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-wrapper">
+        <div class="wrapper">
+          <img src="foodpic/platter.png" alt="">
+          <div class="description">
+            <a href="#">Snacks</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-wrapper">
+        <div class="wrapper">
+          <img src="foodpic/dinner.png" alt="">
+          <div class="description">
+            <a href="#">Dinner</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipes">
+    <div class="recipes-title">RECIPES
+      <hr>
+    </div>
+    <div class="body-wrapper">
+
+      <div class="wrapper" id="item1">
+        <div class="image"><img src="foodpic/pancakes.png" alt=""></div>
+        <div class="description">
+          <h1>Pancakes</h1>
+          <p>Ingredients:<br>
+            1.all-purpose flour<br>
+            2.baking powder<br>
+            3.baking soda<br>
+            4.large egg<br>
+            5.unsalted butter (melted)<br>
+            6.vanilla extract<br>
+            7.milk<br>
+            8.brown sugar
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Dessert</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="" style="margin-left: 9rem;">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/small-batch-brownies-39.jpg" alt=""></div>
+        <div class="description">
+          <h1>Brownies</h1>
+          <p>Ingredients:<br>
+            1.granulated white & brown sugar<br>
+            2.unsweetened cocoa powder<br>
+            3.salt<br>
+            4.espresso powder<br>
+            5.vanilla extract<br>
+            6.vegetable oil<br>
+            7.large eggs<br>
+            8.all purpose flour<br>
+            9.chocolate chips<br>
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Dessert</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+
+      <div class="wrapper" id="item3">
+        <div class="image"><img src="foodpic/lemon-cake.png" alt=""></div>
+        <div class="description">
+          <h1>Lemon loaf cake</h1>
+          <p>Dry Ingredients:<br>
+            all-purpose flour,
+            baking powder,
+            baking soda,
+            salt,
+            lemon instant pudding
+          </p>
+          <p>Wet Ingredients:<br>
+            eggs,
+            vegetable oil,
+            sour cream,
+            vanilla extract,
+            lemon juice,
+            white sugar,
+            lemon zest
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Dessert</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item4">
+        <div class="image"><img src="foodpic/slider.png" alt=""></div>
+        <div class="description">
+          <h1>Slider</h1>
+          <p>Ingredients:<br>
+            1.1 package Hawaiian Rolls, <br>
+            2.10 ounces beef bacon,<br>
+            3.2 tablespoons unsalted butter,<br>
+            4.salt (to taste),<br>
+            5.black pepper, <br>
+            6.veggies
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Appetizer/Snacks</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/shawarma.png" alt=""></div>
+        <div class="description">
+          <h1>Shawarma</h1>
+          <p>Ingredients:<br>
+            1.Chicken<br>
+            2.Olive oil<br>
+            3.Spices <br>
+            4.Toum(garlic paste)
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Lunch</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/chicken-alfredo.png" alt=""></div>
+        <div class="description">
+          <h1>Chicken Alfredo </h1>
+          <p>Ingredients:<br>
+            CHICKEN<br>
+            1 pound chicken breast,
+            1 tablespoon olive oil,
+            2 teaspoons Italian seasoning,
+            1 teaspoon salt,
+            1/4 teaspoon black pepper,<br>
+            ALFREDO SAUCE<br>
+            3/4 cup unsalted butter,
+            1 1/2 tablespoon fresh garlic (minced),
+            3 cups heavy cream,
+            2 1/4 cups parmesan,
+            3 tablespoons cream cheese </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Dinner</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/biryani.png" alt=""></div>
+        <div class="description">
+          <h1>Biryani</h1>
+          <p>Ingredients:<br>
+            1. Parboiled rice<br>
+            2.Spices<br>
+            3. Chicken thighs/legs <br>
+            4. Marinade<br>
+            5. Cripsy onions<br>
+            6. Saffrons<br>
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Lunch</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/samosa.png" alt=""></div>
+        <div class="description">
+          <h1>Samosa</h1>
+          <p>Ingredients:<br>
+            1.2 cups flour<br>
+            2.Oil<br>
+            3.Potato fillng
+            4.Spices
+            5.Chutney (optional)
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Appetizer/Snacks</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/milkshake.png" alt=""></div>
+        <div class="description">
+          <h1>Milkshake</h1>
+          <p>Ingredients:<br>
+            1.Milk(3/4 cup)<br>
+            2.Chocolate bars(3-4)<br>
+            3.Toppings(optional)
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Dessert</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/tea.png" alt=""></div>
+        <div class="description">
+          <h1>Tea</h1>
+          <p>Ingredients:<br>
+            1. 2 cups water<br>
+            2. 2 cups evaporated milk<br>
+            3. 6 to 8 cardamom pods, lightly crushed<br>
+            4. 3 cinnamon sticks<br>
+            5. 1 ginger cube (or a small piece of fresh ginger)<br>
+            6. 1/4 cup light brown sugar (adjust to taste)<br>
+            7. 4 black/red tea bags<br>
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Dessert</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/tiramisu-latte.png" alt=""></div>
+        <div class="description">
+          <h1>Tiramisu-latte</h1>
+          <p>Ingredients:<br>
+            1. 4 shots espresso<br>
+            2. 2 to 4 tablespoons brown sugar or chocolate mocha sauce<br>
+            3. 1/2 cup heavy cream<br>
+            4. 1/4 cup mascarpone cheese<br>
+            5. 2 tablespoons simple syrup<br>
+            6. 1 teaspoon vanilla extract<br>
+            7. 1 to 2 cups milk (whole milk or preferred milk)<br>
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Dessert</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="wrapper" id="item2">
+        <div class="image"><img src="foodpic/blue-mojito.jpg" alt=""></div>
+        <div class="description">
+          <h1>Mojito</h1>
+          <p>Ingredients:<br>
+            1.Fresh mint<br>
+            2.Fresh lime juice<br>
+            3.Sparkling water <br>
+            4.Ice
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="details">
+          <h2>Drinks</h2>
+          <h3>Diet cal: 540cal per servings</h3>
+          <p>Difficulty:
+          <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+            <img src="foodpic/trends-logo.png" alt="">
+          </div>
+          </p>
+          <p></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="read-btn">
+      <a href="#" class="button">Read more</a>
+    </div>
+
+
+  </section>
+
+  <section class="review">
+    <div class="heading">REVIEWS <hr></div>
+    <div class="box-container">
+      <div class="box">
+        <img src="extras/person2.png" alt="">
+        <h3>john doe</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa cumque quisquam odio distinctio quidem corrupti! Delectus exercitationem blanditiis impedit iste velit eveniet repudiandae ab ipsa molestias a.
+           Repellendus reprehenderit, culpa sit assumenda hic suscipit.</p>
+      </div>
+
+      <div class="box">
+        <img src="extras/person1.png" alt="">
+        <h3>john doe</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa cumque quisquam odio distinctio quidem corrupti! Delectus exercitationem blanditiis impedit iste velit eveniet repudiandae ab ipsa molestias a.
+           Repellendus reprehenderit, culpa sit assumenda hic suscipit.</p>
+      </div>
+
+      <div class="box">
+        <img src="extras/person3.png" alt="">
+        <h3>john doe</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa cumque quisquam odio distinctio quidem corrupti! Delectus exercitationem blanditiis impedit iste velit eveniet repudiandae ab ipsa molestias a.
+           Repellendus reprehenderit, culpa sit assumenda hic suscipit.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="index.php" class="link">Home</a>
+        <a href="about.php" class="link">About</a>
+        <a href="catgory.php" class="link">Recipes</a>
+        <a href="education.php" class="link">Educational reads</a>
+        <a href="contact.php" class="link">Contact us</a>
+
+      </div>
+
+      <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#" class="link">My account</a>
+        <a href="#" class="link">My favourite</a>
+        <a href="#" class="link">My orders</a>
+        <div class="icons">
+          <a href="https://www.facebook.com/" class="fa-brands fa-facebook" title="facebook"></a>
+          <a href="https://twitter.com/?lang=en/" class="fa-brands fa-x-twitter" title="twitter"></a>
+          <a href="https://www.linkedin.com/" class="fa-brands fa-linkedin" title="linkedin"></a>
+        </div>
+      </div>
+      <div class="box">
+
+        <h3>Contact Info</h3>
+        <a href="#" class="link">+123-987-654321</a>
+        <a href="#" class="link">foodfusion@gmail.com</a>
+        <a href="#" class="link">Kuwait</a>
+
+      </div>
+    </div>
+    <div class="credit"> &copy;<span id="first"> Muskan Nisar </span> <span id="second">Ahmed Shaikh</span> | all
+      rights reserved </div>
+  </section>
+
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn-new');
+    const toggleBtnIcon = document.querySelector('.toggle-btn-new i');
+    const dropDownMenu = document.querySelector('.dropdown-menu-new');
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open');
+      const isOpen = dropDownMenu.classList.contains('open');
+      toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    };
+  </script>
+
+  <script>
+    let slideImages = document.querySelectorAll('.slides img');
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+    let dots = document.querySelectorAll('.dot');
+    let counter = 0;
+
+    next.addEventListener('click', slideNext);
+    function slideNext() {
+      slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+      dots[counter].classList.remove('active');
+      counter = counter >= slideImages.length - 1 ? 0 : counter + 1;
+      slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+      dots[counter].classList.add('active');
+    }
+
+    prev.addEventListener('click', slidePrev);
+    function slidePrev() {
+      slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+      dots[counter].classList.remove('active');
+      counter = counter === 0 ? slideImages.length - 1 : counter - 1;
+      slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+      dots[counter].classList.add('active');
+    }
+
+    function autoSliding() {
+      deletInterval = setInterval(slideNext, 3000);
+    }
+    autoSliding();
+
+    const container = document.querySelector('.slide-container');
+    container.addEventListener('mouseover', () => clearInterval(deletInterval));
+    container.addEventListener('mouseout', autoSliding);
+
+    function indicators() {
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('active');
+      }
+      dots[counter].classList.add('active');
+    }
+
+    function switchImage(currentImage) {
+      currentImage.classList.add('active');
+      let imageId = currentImage.getAttribute('attr');
+      if (imageId > counter) {
+        slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+      } else if (imageId < counter) {
+        slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+      } else return;
+      counter = imageId;
+      slideImages[counter].style.animation = imageId > counter ? 'next2 0.5s ease-in forwards' : 'prev2 0.5s ease-in forwards';
+      indicators();
+    }
+  </script>
+</body>
+
+</html>

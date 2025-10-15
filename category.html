@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Categories</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="body-nav">
+    <div class="navbar-new">
+      <div class="logo"><a href="#"><img src="foodpic/logo.png" alt=""></a></div>
+      <ul class="links-new">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="category.html">Recipes</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+      </ul>
+<div class="right-section">              <li><a href="#" class="action-btn-new">Get started</a></li>
+</div>
+     
+
+      <div class="toggle-btn-new">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown-menu-new">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="action-btn-new">Get started</a></li>
+    </div>
+  </div>
+
+<section class="trends">
+<section class="carousel">
+    <div class="container">
+      <div class="slide">
+      <div class="item" style="background-image: url(foodpic/dubai-choco-cheesecake.png);">
+          <div class="content">
+            <div class="name">CULINARY TRENDS</div>
+            <div class="des">Check out the Dubai Chocolate Cheescake       </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+
+        <div class="item" style="background-image: url(foodpic/tender.png);">
+          <div class="content">
+            <div class="name">DEVOUR SOME SPICE</div>
+            <div class="des">
+                Spicy, juicy, meaty, and mouth-watering savoury recipes
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+
+        <div class="item" style="background-image: url(foodpic/oreo-mousse.png);">
+          <div class="content">
+            <div class="name">Craving Sweets?</div>
+            <div class="des">
+                Have a sweet tooth? Check out the dessert sections to satisfy your cravings...
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(foodpic/kids-breakfasr2.png);">
+          <div class="content">
+            <div class="name">BREAKFAST NOT READY?</div>
+            <div class="des">
+                Dive into the easy and quick recipes for your busy morning routines
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(foodpic/coffee.png);">
+          <div class="content">
+            <div class="name">Quench your thirst</div>
+            <div class="des">
+                With the nourishing, cool, and season-cosy drinks! Blend one today
+
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="button">
+        <button class="prev"> <i class="fa-solid fa-arrow-left"></i> </button>
+        <button class="next"> <i class="fa-solid fa-arrow-right"></i> </button>
+
+      </div>
+    </div>
+  </section>
+  <script src="carousel.js"></script>
+</section>
+
+<body class="body-category">
+
+<section class="category">
+
+    <div class="category-heading">CATEGORY
+    </div>
+
+    <div class="wrapper">
+        <!-- Search section -->
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="Search recipe name here..." />
+            <button id="search"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        </div>
+
+        <!-- Recipe Category Filters -->
+        <div id="buttons">
+            <button class="button-value" onclick="filterRecipe('all')">All</button>
+            <button class="button-value" onclick="filterRecipe('Appetizer/Snacks')">Appetizer/Snacks</button>
+            <button class="button-value" onclick="filterRecipe('Breakfast')">Breakfast</button>
+            <button class="button-value" onclick="filterRecipe('Lunch')">Lunch</button>
+            <button class="button-value" onclick="filterRecipe('Dinner')">Dinner</button>
+            <button class="button-value" onclick="filterRecipe('Drinks')">Drinks</button>
+            <button class="button-value" onclick="filterRecipe('Dessert')">Dessert</button>
+        </div>
+
+        <!-- Recipe Cards Container -->
+        <div class="recipes">
+            <!-- Recipe Card 1 -->
+            <div class="recipe-card" data-category="Breakfast">
+                <div class="wrapper">
+                    <div class="image">
+                        <img src="foodpic/pancakes.png" alt="Pancakes" />
+                    </div>
+                    <div class="description">
+                        <h1>Pancakes</h1>
+                        <p>Ingredients: All-purpose flour, baking powder, baking soda, large egg, unsalted butter
+                            (melted), vanilla extract, milk, brown sugar</p>
+                        <a href="/recipes/pancakes.html">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Dessert</h2>
+                        <h3>Diet cal: 740cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                   
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-category="Dessert">
+                <div class="wrapper">
+                    <div class="image">
+                        <img src="foodpic/cheescake.png" alt="Cheesecakes" />
+                    </div>
+                    <div class="description">
+                        <h1>Cheesecakes</h1>
+                        <p>Ingredients: All-purpose flour, baking powder, baking soda, large egg, unsalted butter
+                            (melted), vanilla extract, milk, brown sugar</p>
+                            <a href="recipes.php?recipe=cheesecake">Read more...</a>  <!-- Link to recipes.php -->
+                            </div>
+                    <div class="details">
+                        <h2>Dessert</h2>
+                        <h3>Diet cal: 930cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe Card 2 -->
+            <div class="recipe-card" data-category="Dessert">
+                <div class="wrapper">
+                    <div class="image">
+                        <img src="foodpic/small-batch-brownies-39.jpg" alt="Brownies" />
+                    </div>
+                    <div class="description">
+                        <h1>Brownies</h1>
+                        <p>Ingredients: Granulated white & brown sugar, unsweetened cocoa powder, salt, espresso powder,
+                            vanilla extract, vegetable oil, large eggs, all-purpose flour, chocolate chips</p>
+                        <a href="/recipes/brownies.html">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Dessert</h2>
+                        <h3>Diet cal: 820cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- Recipe Card for Falafel Wrap -->
+<div class="recipe-card" data-category="Lunch">
+    <div class="wrapper">
+        <div class="image">
+            <img src="foodpic/falafelwrap.png" alt="Falafel Wrap" />
+        </div>
+        <div class="description">
+            <h1>Falafel Wrap</h1>
+            <p>Ingredients: Falafel balls, wraps, hummus, pickled onions, shredded lettuce, tomato slices, pickles, tahini dressing</p>
+            <a href="recipes.php?recipe=falafelwrap">Read more...</a>  <!-- Link to recipes.php with the recipe parameter -->
+        </div>
+        <div class="details">
+            <h2>Lunch</h2>
+            <h3>Diet cal: 400cal per serving</h3>
+            <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                        </div>
+                        </p>
+        </div>
+    </div>
+</div>
+
+
+
+            <!-- Recipe Card 3 -->
+
+            <div class="recipe-card" data-category="Dessert">
+
+                <div class="wrapper" id="item3">
+                    <div class="image"><img src="foodpic/lemon-cake.png" alt=""></div>
+                    <div class="description">
+                        <h1>Lemon loaf cake</h1>
+                        <p>Dry Ingredients:<br>
+                            all-purpose flour,
+                            baking powder,
+                            baking soda,
+                            salt,
+                            lemon instant pudding
+                        </p>
+                        <p>Wet Ingredients:<br>
+                            eggs,
+                            vegetable oil,
+                            sour cream,
+                            vanilla extract,
+                            lemon juice,
+                            white sugar,
+                            lemon zest
+                        </p>
+                        <a href="#">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Dessert</h2>
+                        <h3>Diet cal: 540cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                        </div>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-category="Appetizer/Snacks">
+                <div class="wrapper" id="item4">
+                    <div class="image"><img src="foodpic/slider.png" alt=""></div>
+                    <div class="description">
+                        <h1>Slider</h1>
+                        <p>Ingredients:<br>
+                            1.1 package Hawaiian Rolls, <br>
+                            2.10 ounces beef bacon,<br>
+                            3.2 tablespoons unsalted butter,<br>
+                            4.salt (to taste),<br>
+                            5.black pepper, <br>
+                            6.veggies
+                        </p>
+                        <a href="#">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Appetizer/Snacks</h2>
+                        <h3>Diet cal: 540cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                        </div>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-category="Lunch">
+                <div class="wrapper" id="item2">
+                    <div class="image"><img src="foodpic/shawarma.png" alt=""></div>
+                    <div class="description">
+                        <h1>Shawarma</h1>
+                        <p>Ingredients:<br>
+                            1.Chicken<br>
+                            2.Olive oil<br>
+                            3.Spices <br>
+                            4.Toum(garlic paste)
+                        </p>
+                        <a href="#">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Lunch</h2>
+                        <h3>Diet cal: 650cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+
+                        </div>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-category="Lunch">
+                <div class="wrapper" id="item2">
+                    <div class="image"><img src="foodpic/chicken-alfredo.png" alt=""></div>
+                    <div class="description">
+                        <h1>Chicken Alfredo </h1>
+                        <p>Ingredients:<br>
+                            CHICKEN<br>
+                            1 pound chicken breast,
+                            1 tablespoon olive oil,
+                            2 teaspoons Italian seasoning,
+                            <br>
+                            ALFREDO SAUCE<br>
+                            3/4 cup unsalted butter,
+                            1 1/2 tablespoon fresh garlic (minced),
+                            3 cups heavy cream,
+                         </p>
+                        <a href="#">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Lunch</h2>
+                        <h3>Diet cal: 750cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+
+                        </div>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-category="Dinner">
+                <div class="wrapper" id="item2">
+                    <div class="image"><img src="foodpic/biryani.png" alt=""></div>
+                    <div class="description">
+                        <h1>Biryani</h1>
+                        <p>Ingredients:<br>
+                            1. Parboiled rice<br>
+                            2.Spices<br>
+                            3. Chicken thighs/legs <br>
+                            4. Marinade<br>
+                            5. Cripsy onions<br>
+                            6. Saffrons<br>
+                        </p>
+                        <a href="#">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Dinner</h2>
+                        <h3>Diet cal: 800cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                        </div>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="recipe-card" data-category="Appetizer/Snacks">
+                <div class="wrapper" id="item2">
+                    <div class="image"><img src="foodpic/samosa.png" alt=""></div>
+                    <div class="description">
+                        <h1>Samosa</h1>
+                        <p>Ingredients:<br>
+                            1.2 cups flour<br>
+                            2.Oil<br>
+                            3.Potato fillng
+                            4.Spices
+                            5.Chutney (optional)
+                        </p>
+                        <a href="#">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Appetizer/Snacks</h2>
+                        <h3>Diet cal: 625cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+
+                        </div>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card" data-category="Drinks">
+                <div class="wrapper" id="item2">
+                    <div class="image"><img src="foodpic/milkshake.png" alt=""></div>
+                    <div class="description">
+                        <h1>Milkshake</h1>
+                        <p>Ingredients:<br>
+                            1.Milk(3/4 cup)<br>
+                            2.Chocolate bars(3-4)<br>
+                            3.Toppings(optional)
+                        </p>
+                        <a href="#">Read more...</a>
+                    </div>
+                    <div class="details">
+                        <h2>Drinks</h2>
+                        <h3>Diet cal: 240cal per servings</h3>
+                        <p>Difficulty:
+                        <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                            <img src="foodpic/trends-logo.png" alt="">
+                        </div>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="recipe-card" data-category="Drinks">
+            <div class="wrapper" id="item2">
+                <div class="image"><img src="foodpic/tea.png" alt=""></div>
+                <div class="description">
+                    <h1>Tea</h1>
+                    <p>Ingredients:<br>
+                        1. 2 cups water<br>
+                        2. 2 cups evaporated milk<br>
+                        3. 6 to 8 cardamom pods, lightly crushed<br>
+                        4. 3 cinnamon sticks<br>
+                        5. 1 ginger cube (or a small piece of fresh ginger)<br>
+                        6. 1/4 cup light brown sugar (adjust to taste)<br>
+                        7. 4 black/red tea bags<br>
+                    </p>
+                    <a href="#">Read more...</a>
+                </div>
+                <div class="details">
+                    <h2>Drinks</h2>
+                    <h3>Diet cal: 120cal per servings</h3>
+                    <p>Difficulty:
+                    <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+
+                    </div>
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-card"  data-category="Drinks">
+            <div class="wrapper" id="item2">
+                <div class="image"><img src="foodpic/tiramisu-latte.png" alt=""></div>
+                <div class="description">
+                    <h1>Tiramisu-latte</h1>
+                    <p>Ingredients:<br>
+                        1. 4 shots espresso<br>
+                        2. 2 to 4 tablespoons brown sugar or chocolate mocha sauce<br>
+                        3. 1/2 cup heavy cream<br>
+                        4. 1/4 cup mascarpone cheese<br>
+                        5. 2 tablespoons simple syrup<br>
+                        6. 1 teaspoon vanilla extract<br>
+                        7. 1 to 2 cups milk (whole milk or preferred milk)<br>
+                    </p>
+                    <a href="#">Read more...</a>
+                </div>
+                <div class="details">
+                    <h2>Drinks</h2>
+                    <h3>Diet cal: 350cal per servings</h3>
+                    <p>Difficulty:
+                    <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                        <img src="foodpic/trends-logo.png" alt="">
+                    </div>
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="Dessert">
+            <div class="wrapper" id="item2">
+                <div class="image"><img src="foodpic/dubai-choco-cheesecake.png" alt=""></div>
+                <div class="description">
+                    <h1>Dubai  Choco Cheesecake</h1>
+                    <p>Ingredients:<br>
+                        1. 4 shots espresso<br>
+                        2. 2 to 4 tablespoons brown sugar or chocolate mocha sauce<br>
+                        3. 1/2 cup heavy cream<br>
+                        4. 1/4 cup mascarpone cheese<br>
+                     
+                    </p>
+                    <a href="#">Read more...</a>
+                </div>
+                <div class="details">
+                    <h2>Dessert</h2>
+                    <h3>Diet cal: 1240cal per servings</h3>
+                    <p>Difficulty:
+                    <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                        <img src="foodpic/trends-logo.png" alt="">
+                    </div>
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="Breakfast">
+            <div class="wrapper" id="item2">
+                <div class="image"><img src="foodpic/kids-breakfasr2.png" alt=""></div>
+                <div class="description">
+                    <h1>Tiramisu-latte</h1>
+                    <p>Ingredients:<br>
+                        1. 4 shots espresso<br>
+                        2. 2 to 4 tablespoons brown sugar or chocolate mocha sauce<br>
+                        3. 1/2 cup heavy cream<br>
+                        4. 1/4 cup mascarpone cheese<br>
+                        5. 2 tablespoons simple syrup<br>
+                        6. 1 teaspoon vanilla extract<br>
+                        7. 1 to 2 cups milk (whole milk or preferred milk)<br>
+                    </p>
+                    <a href="#">Read more...</a>
+                </div>
+                <div class="details">
+                    <h2>Dessert</h2>
+                    <h3>Diet cal: 740cal per servings</h3>
+                    <p>Difficulty:
+                    <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                        <img src="foodpic/trends-logo.png" alt="">
+                    </div>
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="Dinner">
+            <div class="wrapper" id="item2">
+                <div class="image"><img src="foodpic/subway.png" alt=""></div>
+                <div class="description">
+                    <h1>Munchurian Subway</h1>
+                    <p>Ingredients:<br>
+                        1. 4 shots espresso<br>
+                        2. 2 to 4 tablespoons brown sugar or chocolate mocha sauce<br>
+                        3. 1/2 cup heavy cream<br>
+                        4. 1/4 cup mascarpone cheese<br>
+                     
+                        7. 1 to 2 cups milk (whole milk or preferred milk)<br>
+                    </p>
+                    <a href="#">Read more...</a>
+                </div>
+                <div class="details">
+                    <h2>Dinner</h2>
+                    <h3>Diet cal: 950cal per servings</h3>
+                    <p>Difficulty:
+                    <div id="level"> <img src="foodpic/trends-logo.png" alt="">
+                        <img src="foodpic/trends-logo.png" alt="">
+                        <img src="foodpic/trends-logo.png" alt=""><img src="foodpic/trends-logo.png" alt=""><img src="foodpic/trends-logo.png" alt="">
+                    </div>
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Script -->
+    <script src="category.js"></script>
+
+</section>
+
+<section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="/D&D.html" class="link">Home</a>
+        <a href="/about.html" class="link">About</a>
+        <a href="/products.html" class="link">Recipes</a>
+        <a href="/health.html" class="link">Educational reads</a>
+        <a href="/contact.html" class="link">Contact us</a>
+
+      </div>
+
+      <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#" class="link">My account</a>
+        <a href="#" class="link">My favourite</a>
+        <a href="#" class="link">My orders</a>
+        <div class="icons">
+          <a href="https://www.facebook.com/" class="fa-brands fa-facebook" title="facebook"></a>
+          <a href="https://twitter.com/?lang=en/" class="fa-brands fa-x-twitter" title="twitter"></a>
+          <a href="https://www.linkedin.com/" class="fa-brands fa-linkedin" title="linkedin"></a>
+        </div>
+      </div>
+      <div class="box">
+
+        <h3>Contact Info</h3>
+        <a href="#" class="link">+123-987-654321</a>
+        <a href="#" class="link">foodfusion@gmail.com</a>
+        <a href="#" class="link">Kuwait</a>
+
+      </div>
+    </div>
+    <div class="credit"> &copy; <span id="first"> Muskan Nisar </span> <span id="second">Ahmed Shaikh</span> | all
+      rights reserved</div>
+  </section>
+
+
+</body>
+</body>
+
+</html>
